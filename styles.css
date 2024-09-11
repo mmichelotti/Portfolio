@@ -17,14 +17,14 @@ body {
 header {
     text-align: center;
     background: linear-gradient(135deg, #282828, #121212);
-    padding: 50px 0;
+    font-size: 2rem; /* Reduced font size */
     color: #00bfff;
-    font-size: 2.5rem;
     font-weight: 500;
     letter-spacing: 2px;
     animation: fadeIn 2s ease-out;
+    padding: 30px; /* Remove padding */
+    margin: 0px;
 }
-
 h2 {
     text-align: center;
     font-size: 2rem;
@@ -70,12 +70,12 @@ footer {
     margin-top: 30px;
 }
 
-footer a {
+a {
     color: #00bfff;
     text-decoration: none;
 }
 
-footer a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -152,10 +152,4 @@ footer a:hover {
         max-width: 100%;
     }
 }
-
-
-
-
-
-
 
