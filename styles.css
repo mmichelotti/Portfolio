@@ -114,3 +114,48 @@ footer a:hover {
         font-size: 1.3rem;
     }
 }
+
+/* Video Container Styling */
+.video-container {
+    display: flex;
+    flex-direction: column; /* Stack videos vertically */
+    gap: 20px;
+    align-items: center; /* Center align videos */
+    justify-content: center;
+    padding: 0; /* Ensure no padding around the container */
+    margin: 0; /* Ensure no margin around the container */
+    overflow: hidden; /* Hide any overflow if present */
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 1200px; /* Maintain the max-width for consistency */
+    border: none; /* Remove any default border */
+    box-shadow: none; /* Remove any shadow if not needed */
+    margin: 0; /* Remove any margin around the iframe */
+    padding: 0; /* Remove any padding around the iframe */
+}
+
+/* Specific height for horizontal videos */
+.video-container iframe.horizontal {
+    height: 600px; /* Adjust height for horizontal videos */
+}
+
+/* Increase height for vertical videos */
+.video-container iframe.vertical {
+    height: 1860px; /* Larger height for vertical video */
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 768px) {
+    .video-container iframe {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
