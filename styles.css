@@ -130,6 +130,27 @@ a:hover {
     overflow: hidden;
 }
 
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 40px auto; /* Spacing out the container */
+    overflow: hidden; /* Hide any overflow */
+    width: 100%; /* Set a width for the container if needed */
+    max-width: 940px; /* Example max width, adjust as needed */
+    height: auto; /* Height will adjust automatically */
+}
+
+.image-container img {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the image is resized to fit without cropping */
+}
+
+
 .video-container iframe {
     width: 100%;
     max-width: 100%;
