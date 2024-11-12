@@ -131,19 +131,31 @@
                     <p>
                         It is being built in CPP and using OpenGL as a graphics library. As for now,  I implemented:
                     <ul>
-                        <li><b>Vertex / Index</b> array buffers</li>
-                        <li><b>Time</b> concepts useful for navigation</li>
-                        <li><b>Shaders</b> to be able to draw vertex and fragment through HLSL external files</li>
+                        <li><b>Vertex / Index</b> array buffers can load and render meshes</li>
+                        <li><b>Shaders</b> to be able to draw vertex fragment and geometry shaders through GLSL external files</li>
+                        <li><b>Textures and Materials</b> can be loaded and used on meshes</li>
                         <li><b>Camera</b> to render the frame according to our view matrix</li>
-                        <li><b>I/O Callbacks</b> to move the camera around the environments</li>
+                        <li><b>I/O Callbacks</b></li>
+                        <li><b>Time</b> class</li>
+                        <li><b>Model Importer</b> class to import .obj file containing materials and texutres</li>
+                        <li><b>Transform</b> class to handle various matrix transformation of each model, like translation, scale and rotation</li>
+                        <li><b>Directional / Point / Spot lights</b> </li>
+                        <li><b>Directional Shadowmaps and Cubemaps</b> to cast shadows from those very light types</li>
+                        <li><b>Skybox</b> to load any HDRI or cubemap for the background</li>
                     </ul>
                     </p>
                     <p>Check the code on GitHub:
                         <a href="https://github.com/mmichelotti/OpenGLCourseApp" target="_blank">OppenGL Render Engine</a>
                     </p>
                 <br>
+
                 <div class="image-container">    
                     <img src="screen.png" alt="Just a screenshot">
+                </div>
+                <div class="video-container">
+                    <video class="horizontal" src="video.mp4" autoplay loop muted style="width: 100%; height: auto; clip-path: inset(0 0 55px 0);">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 </li>
             </ul>
