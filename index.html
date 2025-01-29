@@ -122,7 +122,7 @@
                 <li>
                     <br>
                     <br>
-                    <h3>Render Engine</h3>
+                    <h3>OpenGL Engine</h3>
                     <p>
                         My first steps towards graphics programming and render engineering. The engine is in constant development and its only purpose is for me to get a deeper understanding on these matters.
                     </p>
@@ -146,7 +146,6 @@
                         <a href="https://github.com/mmichelotti/OpenGLCourseApp" target="_blank">Github Project</a>
                     </p>
                 <br>
-
                 <div class="image-container">    
                     <img src="screen.png" alt="Just a screenshot">
                 </div>
@@ -155,6 +154,30 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
+                </li>
+                <li>
+                    <br>
+                    <br>
+                    <h3>Vulkan Engine</h3>
+                    <p>
+                        After the OpenGL engine I tried setting up Vulkan API which resulted in a way more challenging project.
+                    </p>
+                    <p>
+                        Not much has implemented but a good foundation for it to be extended in the future:
+                    <ul>
+                        <li></li>
+                        <li><b>Window</b> using GLFW, allows to link individual window to each VulkanRenderer in the case multiple windows are needed to render (such in the case of a multiplayer client / server project). </li>
+                        <li><b>Vulkan Compoennts</b> such as logical and physical device, interface, surface and so on, in order to interface with the GPU.</li>
+                        <li><b>Vulkan Validation Layer</b> and debug callback to debug when Vulkan Compoents are not acting like I expected. </li>
+                        <li><b>Graphics Pipeline</b> such as swap chain to prepare images, render pass, subpasses, push constant and descriptor sets for shaders, texture samplers, cmd pool and buffer, semaphores and fences, and so on.</li>
+                        <li><b>Texture import.</b></li>
+                        <li><b>Mesh creation</b> through vertex and index buffers.</li>
+                        <li><b>Model import</b> has been setup but not finished, missing the ASSIMP library implementation.</li>
+                    </ul>
+                    </p>
+                    <p>
+                        <a href="https://github.com/mmichelotti/VulkanCourseApp" target="_blank">Github Project</a>
+                    </p>
                 </li>
             </ul>
         </section>
